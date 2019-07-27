@@ -1,0 +1,21 @@
+def minmax(ListOfNumbers):
+    
+    Smallest = ListOfNumbers[0]
+    Largest = ListOfNumbers[0]
+    for i in ListOfNumbers:
+        if i < Smallest:
+            Smallest = i
+        elif i > Largest:
+            Largest = i
+    result =  (Smallest, Largest)    
+    return result
+    
+sequence_number = int(input("how many sequence you would like to enter : "))
+
+ListOfNumbers = list()  
+
+for i in range(1,sequence_number+1):
+    n = int(input("Enter the number: "))
+    ListOfNumbers.append(n)
+print (ListOfNumbers)
+print (minmax(ListOfNumbers))
