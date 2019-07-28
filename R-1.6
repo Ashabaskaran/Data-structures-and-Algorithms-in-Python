@@ -1,0 +1,10 @@
+
+def SumOfSquare(is_PosInt):
+    SumOfSqr = 0
+    for i in range(1,is_PosInt+1):
+        if i % 2 != 0:
+            SumOfSqr += i * i
+    return SumOfSqr     
+    
+is_PosInt = int(input("Enter a positive integer: "))
+print (SumOfSquare(is_PosInt))
