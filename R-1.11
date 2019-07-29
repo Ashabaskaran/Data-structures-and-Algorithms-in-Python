@@ -1,0 +1,5 @@
+power  = list()
+for i in range(0,9):
+    var = 2 ** i
+    power.append(var)
+print(power)
